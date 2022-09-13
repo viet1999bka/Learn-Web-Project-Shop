@@ -1,0 +1,45 @@
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP Notice:  Object of class mysqli could not be converted to int in C:\xampp\htdocs\web\framework\library\sqlquery.class.php on line 24
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP Stack trace:
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\web\framework\public\index.php:0
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP   2. require_once() C:\xampp\htdocs\web\framework\public\index.php:12
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP   3. require_once() C:\xampp\htdocs\web\framework\library\bootstrap.php:6
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP   4. callHook() C:\xampp\htdocs\web\framework\library\shared.php:154
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP   5. CategoriesController->__construct($controller = 'categories', $action = 'index') C:\xampp\htdocs\web\framework\library\shared.php:99
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP   6. Category->__construct() C:\xampp\htdocs\web\framework\library\vanillacontroller.class.php:22
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP   7. Category->connect($address = 'localhost', $account = 'root', $pwd = '', $name = 'framework') C:\xampp\htdocs\web\framework\library\vanillamodel.class.php:9
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, string given in C:\xampp\htdocs\web\framework\library\sqlquery.class.php on line 122
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP Stack trace:
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\web\framework\public\index.php:0
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP   2. require_once() C:\xampp\htdocs\web\framework\public\index.php:12
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP   3. require_once() C:\xampp\htdocs\web\framework\library\bootstrap.php:6
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP   4. callHook() C:\xampp\htdocs\web\framework\library\shared.php:154
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP   5. CategoriesController->index() C:\xampp\htdocs\web\framework\library\shared.php:103
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP   6. Category->search() C:\xampp\htdocs\web\framework\application\controllers\categoriescontroller.php:31
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP   7. mysqli_query($link = 'SELECT * FROM `categories` as `Category` LEFT JOIN `categories` as `Parent` ON `Category`.`parent_id` = `Parent`.`id`   WHERE \'1\'=\'1\' AND `Category`.`parent_id` = \'0\'  ORDER BY `Category`.`name` ASC', $query = class mysqli { public $affected_rows = -1; public $client_info = 'mysqlnd 7.4.10'; public $client_version = 70410; public $connect_errno = 0; public $connect_error = NULL; public $errno = 0; public $error = ''; public $error_list = []; public $field_count = 0; public $host_info = 'localhost via TCP/IP'; public $info = NULL; public $insert_id = 0; public $server_info = '5.5.5-10.4.14-MariaDB'; public $server_version = 100414; public $sqlstate = '00000'; public $protocol_version = 10; public $thread_id = 17; public $warning_count = 0 }) C:\xampp\htdocs\web\framework\library\sqlquery.class.php:122
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP Warning:  mysqli_num_fields() expects parameter 1 to be mysqli_result, null given in C:\xampp\htdocs\web\framework\library\sqlquery.class.php on line 127
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP Stack trace:
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\web\framework\public\index.php:0
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP   2. require_once() C:\xampp\htdocs\web\framework\public\index.php:12
+[12-Dec-2020 16:52:56 Europe/Berlin] PHP   3. require_once() C:\xampp\htdocs\web\framework\library\bootstrap.php:6
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP   4. callHook() C:\xampp\htdocs\web\framework\library\shared.php:154
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP   5. CategoriesController->index() C:\xampp\htdocs\web\framework\library\shared.php:103
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP   6. Category->search() C:\xampp\htdocs\web\framework\application\controllers\categoriescontroller.php:31
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP   7. mysqli_num_fields($result = NULL) C:\xampp\htdocs\web\framework\library\sqlquery.class.php:127
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in C:\xampp\htdocs\web\framework\library\sqlquery.class.php on line 132
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP Stack trace:
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\web\framework\public\index.php:0
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP   2. require_once() C:\xampp\htdocs\web\framework\public\index.php:12
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP   3. require_once() C:\xampp\htdocs\web\framework\library\bootstrap.php:6
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP   4. callHook() C:\xampp\htdocs\web\framework\library\shared.php:154
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP   5. CategoriesController->index() C:\xampp\htdocs\web\framework\library\shared.php:103
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP   6. Category->search() C:\xampp\htdocs\web\framework\application\controllers\categoriescontroller.php:31
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP   7. mysqli_num_rows($result = NULL) C:\xampp\htdocs\web\framework\library\sqlquery.class.php:132
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, null given in C:\xampp\htdocs\web\framework\library\sqlquery.class.php on line 246
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP Stack trace:
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\web\framework\public\index.php:0
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP   2. require_once() C:\xampp\htdocs\web\framework\public\index.php:12
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP   3. require_once() C:\xampp\htdocs\web\framework\library\bootstrap.php:6
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP   4. callHook() C:\xampp\htdocs\web\framework\library\shared.php:154
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP   5. CategoriesController->index() C:\xampp\htdocs\web\framework\library\shared.php:103
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP   6. Category->search() C:\xampp\htdocs\web\framework\application\controllers\categoriescontroller.php:31
+[12-Dec-2020 16:52:57 Europe/Berlin] PHP   7. mysqli_free_result($result = NULL) C:\xampp\htdocs\web\framework\library\sqlquery.class.php:246
